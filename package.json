@@ -1,0 +1,15 @@
+{
+  "name": "torus-pub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "compile": "emcc -std=c++11 -O3 -s USE_WEBGL2=1 -s NO_FILESYSTEM=1 -s WASM=1 --js-library library_grafikahazi.js program.cpp -o index.html",
+    "start": "lite-server index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
